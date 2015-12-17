@@ -61,6 +61,8 @@ body {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    font-size: $grp-font-size;
 }
 
 .grp-column {
@@ -248,8 +250,11 @@ header#grp-header {
             float: left;
             margin: 0;
             padding: 10px 0;
-            font-size: 12px;
+            font-size: 15px;
             line-height: 16px;
+            
+            /* use link color instead of white for consistency */
+            color: lighten($grp-link-color, 10);
         }
         a {
             color: lighten($grp-link-color, 10);
@@ -585,10 +590,15 @@ body.grp-popup {
     }
 }
 
+.user-options-handler {
+    font-weight: bold;
+}
 
-
-
-
-
-
+.grp-dashboard-module .grp-row a {
+    /* copied formatting from li.grp-change-link: */
+    background: url('../images/icons-small-s7d28d7943b.png') no-repeat;
+    background-position: 0 -3753px;
+    padding-left: 18px;
+    font-size: $grp-font-size;
+}
 

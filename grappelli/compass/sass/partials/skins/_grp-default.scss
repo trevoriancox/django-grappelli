@@ -7,7 +7,7 @@
 
 /*  Font Family ............................................................ */
 
-$grp-font-family: Arial, sans-serif;
+$grp-font-family: 'Lato',Arial,sans-serif;
 @mixin grp-font-family {
     font-family: $grp-font-family;
 }
@@ -36,10 +36,10 @@ $grp-font-color-error: #bf3030 !default;
 
 /*  Link Colors ............................................................ */
 
-$grp-link-color: #309bbf !default;
+/* Appazur colours */
+$grp-link-color: #0095c1 /*#309bbf*/ !default;
 $grp-link-color-hover: #444 !default;
-
-$grp-link-color-quiet: #62bbd9 !default;
+$grp-link-color-quiet: #0095c1 /*#62bbd9*/ !default;
 $grp-link-color-quiet-hover: #444 !default;
 
 
@@ -150,7 +150,7 @@ $grp-table-border-color: #ccc !default;
 
 /*  Form Fields ............................................................ */
 
-$grp-form-field-font-family: Arial, sans-serif !default;
+$grp-form-field-font-family: 'Lato', Arial, sans-serif !default;
 $grp-form-field-font-size: 12px !default;
 $grp-form-field-line-height: 14px !default;
 $grp-form-field-font-color: #555 !default;
@@ -172,7 +172,7 @@ $grp-form-field-border-focus: 1px solid #aaa !default;
 
 /*  Labels ............................................................ */
 
-$grp-form-label-font-family: Arial, sans-serif !default;
+$grp-form-label-font-family: 'Lato', Arial, sans-serif !default;
 $grp-form-label-font-size: 11px !default;
 $grp-form-label-line-height: 13px !default;
 $grp-form-label-font-color: #444 !default;
@@ -184,7 +184,7 @@ $grp-form-label-font-color: #444 !default;
 
 /*  Buttons ............................................................ */
 
-$grp-form-button-font-family: Arial, sans-serif !default;
+$grp-form-button-font-family: 'Lato', Arial, sans-serif !default;
 $grp-form-button-font-size: 12px !default;
 $grp-form-button-font-color: #444 !default;
 $grp-form-button-font-color-hover: #444 !default;

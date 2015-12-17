@@ -4,12 +4,13 @@
 /*  FONT-SIZES & LINE-HEIGHTS
 ------------------------------------------------------------------------------------------------------ */
 
-$grp-font-size-xl: 20px;
-$grp-font-size-l: 13px;
-$grp-font-size-m: 12px;
-$grp-font-size: 12px;
-$grp-font-size-s: 11px;
-$grp-font-size-xs: 10px;
+                         /* Size adjusted for Lato instead of default and previous Droid Sans */
+$grp-font-size-xl: 22px; /* was 20. Dashboard title */
+$grp-font-size-l: 15px;  /* was 13. Dashboard headings */
+$grp-font-size-m: 13px;  /* was 12. */
+$grp-font-size: 13px;    /* was 12. Dashboard menu items */
+$grp-font-size-s: 13px;  /* was 11. Dashboard link menus */
+$grp-font-size-xs: 11px; /* was 10. */
 
 $grp-line-height-xl: 24px;
 $grp-line-height-l: 18px;
@@ -87,10 +88,16 @@ a {
         &:hover {
             color: $grp-link-color-quiet-hover;
         }
+
+        /* for consistency with model menus */
+        font-weight: bold;
     }
     &.grp-link-internal {
         padding-left: 18px;
         @include icons-small-sprite(link-internal);
+
+        /* for consistency with model menus */
+        font-weight: bold;
     }
 }
 
