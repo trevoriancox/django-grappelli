@@ -594,7 +594,7 @@ body.grp-popup {
     font-weight: bold;
 }
 
-.grp-dashboard-module .grp-row a {
+.grp-dashboard-module .grp-row > a:not(.grp-link-internal):not(.grp-link-external):not(.grp-add-link) {
     /* copied formatting from li.grp-change-link: */
     background: url('../images/icons-small-s7d28d7943b.png') no-repeat;
     background-position: 0 -3753px;
