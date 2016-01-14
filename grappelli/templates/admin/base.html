@@ -9,7 +9,12 @@
     <!-- STYLESHEETS -->
     {% block stylesheets %}
         {# This should be listed before any scripts - especially for IE. #}
-        <link href='//fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <!--[if IE]>
+        <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet" type="text/css">
+        <![endif]-->
         {# media="screen" would not support printing/PDF #}
         <link href="{% static "grappelli/jquery/ui/jquery-ui.min.css" %}" rel="stylesheet" type="text/css" media="all" />
         <link href="{% static "grappelli/stylesheets/screen.css" %}" rel="stylesheet" type="text/css" media="all" />
