@@ -6,6 +6,7 @@ Module where grappelli dashboard modules classes are defined.
 
 # DJANGO IMPORTS
 from django.utils.text import capfirst
+from django.contrib.contenttypes.models import ContentType
 from django.utils.translation import ugettext_lazy as _
 from django.apps import apps as django_apps
 
@@ -308,7 +309,6 @@ class RecentActions(DashboardModule):
         request = context['request']
 
         def get_qset(list):
-            from django.contrib.contenttypes.models import ContentType
             qset = None
             for contenttype in list:
                 if isinstance(contenttype, ContentType):
