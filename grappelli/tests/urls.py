@@ -1,13 +1,14 @@
 # coding: utf-8
 
 # DJANGO IMPORTS
-from django.conf.urls import include, url
+from django.conf.urls import patterns, include
 
 # GRAPPELLI IMPORTS
 from grappelli.tests import admin
 
 
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^grappelli/', include('grappelli.urls'))
-]
+urlpatterns = patterns(
+    '',
+    (r'^admin/', include(admin.site.urls)),
+    (r'^grappelli/', include('grappelli.urls')),
+)
